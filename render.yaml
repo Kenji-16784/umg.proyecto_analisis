@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: sqlserver-pos
+    env: docker
+    plan: starter
+    dockerfilePath: Dockerfile.sqlserver
+    autoDeploy: true
+    envVars:
+      - key: "ACCEPT_EULA"
+        value: "Y"
+      - key: "MSSQL_SA_PASSWORD"
+        value: "StrongPassw0rd!"
