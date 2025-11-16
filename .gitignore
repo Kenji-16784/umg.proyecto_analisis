@@ -1,0 +1,17 @@
+# Ignorar carpetas grandes y temporales
+bin/
+obj/
+node_modules/
+.vscode/
+.DS_Store
+
+# Builds de React
+dist/
+build/
+
+# Archivos de usuario
+*.user
+*.suo
+
+# Evitar repositorios dentro de otro
+frontend-pos/.git
